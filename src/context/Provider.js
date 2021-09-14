@@ -12,7 +12,10 @@ function Provider({ children }) {
   });
   
   const moveCar = (car, side) => {
-    setCars({ [car]: side })
+    setCars({
+      ...cars,
+      [car]: side,
+    });
   }
   
   const context = {
