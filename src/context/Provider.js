@@ -22,11 +22,9 @@ function Provider({ children }) {
 
   const changeSignal = (signalColor) => {
     setSignal({
-      signal: {
-        ...signal,
-        color: signalColor,
-      },
-    });
+      ...signal,
+      color: signalColor,
+      });
   }
 
   const context = {
