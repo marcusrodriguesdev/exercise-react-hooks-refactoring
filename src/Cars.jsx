@@ -7,10 +7,10 @@ import carRed from './images/carRed.jpeg';
 import carYellow from './images/carYellow.jpeg';
 
 function Cars() {
-    const { redCar, blueCar, yellowCar } = useContext(CarsContext);
-    const { moveCar } = useContext(CarsContext);
-    return (
-      <div>
+  const { redCar, blueCar, yellowCar } = useContext(CarsContext);
+  const { moveCar } = useContext(CarsContext);
+  return (
+    <div>
       <div>
         <img
           className={redCar ? 'car-right' : 'car-left'}

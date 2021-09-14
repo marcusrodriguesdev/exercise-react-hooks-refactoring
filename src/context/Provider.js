@@ -8,8 +8,8 @@ function Provider({ children }) {
     blue: false,
     yellow: false,
   });
+  const [signal, setSignal] = useState({color: 'red'});
 
-  const [signal, setSignal] = useState('red');
 
   const moveCar = (car, side) => {
     setCars({
@@ -31,8 +31,8 @@ function Provider({ children }) {
     changeSignal,
     moveCar,
   }
-
-  return (
+  
+  return(
     <CarsContext.Provider value={context}>
         {children}
     </CarsContext.Provider>
